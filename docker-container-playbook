@@ -1,5 +1,6 @@
 - hosts: ec2_server
   become: yes
+  gather_facts: no
   tasks:
   - name: installing pip for docker-py
     yum:
