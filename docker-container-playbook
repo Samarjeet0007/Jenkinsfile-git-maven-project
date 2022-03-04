@@ -1,5 +1,4 @@
 - hosts: ec2_server
-  remote_user: root
   become: yes
   - tasks:
     name: installing pip for docker-py
