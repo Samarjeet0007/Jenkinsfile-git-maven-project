@@ -1,6 +1,6 @@
 - hosts: ec2_server
   become: yes
-  - tasks:
+  tasks:
     name: installing pip for docker-py
       yum:
         name: python-pip
