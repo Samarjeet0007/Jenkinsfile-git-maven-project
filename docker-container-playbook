@@ -10,11 +10,11 @@
     yum:
       name: docker
       state: present
-   - name: starting docker service
-     service:
-       name: docker
-       state: started
-       enabled: yes # it will auto. start when remote server will start
+  - name: starting docker service
+    service:
+      name: docker
+      state: started
+      enabled: yes # it will auto. start when remote server will start
   - name: installing docker-py for docker_container binary
     pip:
       name: docker-py
