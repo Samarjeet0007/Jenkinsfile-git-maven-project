@@ -27,6 +27,9 @@ sshagent(['ec2_instance_key']) {
 }
 */
 
+
+
+/*
 pipeline{
     agent any
     
@@ -76,4 +79,13 @@ pipeline{
 def getVersion(){
     def getuniqe = sh returnStdout: true, script: 'echo $RANDOM'
     return getuniqe
+}
+*/
+
+
+
+node{
+  stage('one'){
+     echo "executing in multi-branch"
+  }
 }
