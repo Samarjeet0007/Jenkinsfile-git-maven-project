@@ -85,6 +85,7 @@ def getVersion(){
 
 
 node{
+  label 's1'
   stage('one'){
      echo "executing in multi-branch"
   }
